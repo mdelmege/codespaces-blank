@@ -1,0 +1,26 @@
+{
+  "name": "air-redact-desktop",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.airredact.desktop",
+    "productName": "AirRedact",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.9"
+  }
+}
