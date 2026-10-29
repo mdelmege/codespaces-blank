@@ -4,7 +4,7 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "package-win": "electron-builder --win --x64"
+    "package-win": "electron-builder --win --x64 --publish never"
   },
   "build": {
     "appId": "com.airredact.desktop",
